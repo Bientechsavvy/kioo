@@ -1,0 +1,19 @@
+{
+  "name": "kioo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "An offline-first, open-weight AI knowledge assistant that retrieves source-grounded answers from locally stored documents.",
+  "scripts": {
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "build": "npm --prefix client run build",
+    "start": "npm --prefix server run start",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "test": "npm --prefix server test && npm --prefix client test",
+    "typecheck": "npm --prefix server run typecheck && npm --prefix client run typecheck",
+    "eval": "npm --prefix server run eval",
+    "check:external": "node scripts/check-no-external-calls.mjs",
+    "smoke": "node scripts/smoke.mjs"
+  },
+  "license": "MIT"
+}

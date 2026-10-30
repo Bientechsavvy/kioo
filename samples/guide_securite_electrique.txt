@@ -1,0 +1,29 @@
+GUIDE DE SÉCURITÉ ÉLECTRIQUE (document d'exemple)
+
+Ce document d'exemple a été écrit pour la démonstration de Kioo. Il donne des rappels généraux et ne remplace ni la réglementation de votre pays ni la formation d'un électricien qualifié.
+
+AVANT D'INSPECTER UNE INSTALLATION
+
+Avant d'inspecter une installation électrique, prévenez les personnes présentes et désignez un responsable du travail. Vérifiez que vous êtes formé pour cette tâche et que vous portez l'équipement de protection : gants isolants, lunettes de protection et chaussures à semelles isolantes.
+
+Observez d'abord toute la zone. Cherchez de l'eau, un sol humide, des câbles abîmés, des traces de brûlure et des connexions desserrées. Ne commencez pas si le sol est mouillé ou si vous ne voyez pas bien. Retirez vos bijoux en métal, car le métal conduit l'électricité.
+
+Repérez le disjoncteur général et le tableau électrique avant de commencer. En cas d'urgence, le courant doit pouvoir être coupé très vite.
+
+CONSIGNATION DU CIRCUIT
+
+Pour consigner un circuit, coupez le disjoncteur qui l'alimente et verrouillez-le en position ouverte avec un cadenas personnel. Fixez une étiquette indiquant qui a posé le verrou et pourquoi. Seule la personne qui a posé le cadenas peut le retirer.
+
+Après la consignation, ne supposez jamais que le circuit est hors tension. Utilisez un détecteur de tension pour vérifier l'absence de tension. Testez le détecteur sur une source sous tension avant et après l'utilisation, afin de savoir qu'il fonctionne.
+
+CÂBLES ET RALLONGES
+
+Ne surchargez pas les prises. Une multiprise qui chauffe est le signe que le circuit transporte trop de charge. Débranchez-la et répartissez les appareils sur plusieurs prises.
+
+Remplacez les câbles dont l'isolant est fendu ou coupé. Ne réparez jamais un câble avec du ruban ordinaire lorsqu'il transporte le courant du secteur.
+
+URGENCES
+
+Si une personne est en contact avec une source sous tension, ne la touchez pas directement. Coupez le courant au disjoncteur général si vous pouvez l'atteindre sans danger. Sinon, écartez la personne avec un objet sec en bois ou en plastique, comme un manche à balai.
+
+Appelez les secours dès que possible. Considérez toute électrisation comme grave, même si la personne se sent bien.

@@ -1,0 +1,14 @@
+[
+  {"id": 1,  "lang": "en", "question": "What precautions should be taken before inspecting an electrical system?", "answerable": true, "expectedDoc": "electrical_safety_guide.md", "expectedPhrase": "protective equipment", "answerKeywords": ["glove", "protective", "equipment", "wet", "water"]},
+  {"id": 2,  "lang": "en", "question": "How do I lock out a circuit?", "answerable": true, "expectedDoc": "electrical_safety_guide.md", "expectedPhrase": "padlock", "answerKeywords": ["padlock", "lock", "breaker"]},
+  {"id": 3,  "lang": "en", "question": "How can I prove that a circuit is dead?", "answerable": true, "expectedDoc": "electrical_safety_guide.md", "expectedPhrase": "voltage detector", "answerKeywords": ["voltage detector", "detector", "test"]},
+  {"id": 4,  "lang": "en", "question": "What should I do if someone is in contact with a live source?", "answerable": true, "expectedDoc": "electrical_safety_guide.md", "expectedPhrase": "broom handle", "answerKeywords": ["power", "switch off", "dry", "wooden", "plastic", "broom"]},
+  {"id": 5,  "lang": "fr", "question": "Comment consigner un circuit ?", "answerable": true, "expectedDoc": "guide_securite_electrique.txt", "expectedPhrase": "cadenas", "answerKeywords": ["cadenas", "disjoncteur", "verrou"]},
+  {"id": 6,  "lang": "fr", "question": "Que faire si une personne est en contact avec une source sous tension ?", "answerable": true, "expectedDoc": "guide_securite_electrique.txt", "expectedPhrase": "manche à balai", "answerKeywords": ["courant", "disjoncteur", "sec", "bois", "plastique", "balai"]},
+  {"id": 7,  "lang": "en", "question": "Why will the solar pump not start?", "answerable": true, "expectedDoc": "solar_water_pump_maintenance.md", "expectedPhrase": "float switch", "answerKeywords": ["float switch", "controller", "panel", "light"]},
+  {"id": 8,  "lang": "en", "question": "How often should the solar panels be cleaned?", "answerable": true, "expectedDoc": "solar_water_pump_maintenance.md", "expectedPhrase": "Once a month", "answerKeywords": ["month"]},
+  {"id": 9,  "lang": "en", "question": "How do I prepare tomato seeds for storage?", "answerable": true, "expectedDoc": "seed_saving_notes.txt", "expectedPhrase": "three days", "answerKeywords": ["jar", "three days", "rinse", "dry"]},
+  {"id": 10, "lang": "en", "question": "How do I test old seed before planting it?", "answerable": true, "expectedDoc": "seed_saving_notes.txt", "expectedPhrase": "ten seeds", "answerKeywords": ["ten", "wet cloth", "sprout"]},
+  {"id": 11, "lang": "en", "question": "Who won the football world cup in 1998?", "answerable": false},
+  {"id": 12, "lang": "en", "question": "What is the price of a new solar panel?", "answerable": false}
+]

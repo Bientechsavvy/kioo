@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kioo: when the internet disappears, knowledge stays</title>
+<meta name="description" content="Kioo is an offline-first, open-weight AI knowledge assistant. It answers from documents stored on your own computer and shows its sources.">
+<link rel="icon" href="assets/kioo.svg" type="image/svg+xml">
+<style>
+  /* Kioo landing page: static, no scripts, no external files */
+  :root { --bg:#12100c; --panel:#1b1812; --panel2:#241f16; --line:#3a3224; --text:#f3ecdf; --muted:#b9ad98; --amber:#f2a93b; --ink:#2b1b00; }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin:0; background:var(--bg); color:var(--text); font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  a { color:var(--amber); }
+  a:focus-visible, .btn:focus-visible { outline:2px solid var(--amber); outline-offset:3px; }
+  .wrap { max-width:960px; margin:0 auto; padding:0 20px; }
+  header.top { position:sticky; top:0; background:rgba(18,16,12,.94); border-bottom:1px solid var(--line); z-index:5; }
+  header.top .wrap { display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; padding-top:10px; padding-bottom:10px; }
+  .logo { font-weight:800; font-size:1.2rem; color:var(--text); text-decoration:none; }
+  .logo span { color:var(--amber); }
+  nav a { margin-left:14px; text-decoration:none; color:var(--muted); font-size:.92rem; }
+  nav a:hover { color:var(--amber); }
+  .hero { padding:72px 0 48px; text-align:center; background:radial-gradient(60% 100% at 50% 0%, rgba(242,169,59,.16), transparent 70%); }
+  .hero h1 { font-size:clamp(2rem,6vw,3.2rem); line-height:1.1; margin:0 0 14px; }
+  .hero p.lead { color:var(--muted); max-width:640px; margin:0 auto 26px; font-size:1.15rem; }
+  .btn { display:inline-block; background:var(--amber); color:var(--ink); font-weight:700; text-decoration:none; padding:11px 20px; border-radius:10px; margin:4px; }
+  .btn.ghost { background:transparent; color:var(--text); border:1px solid var(--line); }
+  section { padding:44px 0; border-top:1px solid var(--line); }
+  h2 { font-size:.82rem; letter-spacing:.1em; text-transform:uppercase; color:var(--amber); margin:0 0 14px; }
+  h3 { margin:0 0 6px; font-size:1.1rem; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:14px; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:16px; }
+  .card p { margin:0; color:var(--muted); font-size:.95rem; }
+  ol.steps { padding-left:22px; } ol.steps li { margin:8px 0; }
+  pre { background:var(--panel2); border:1px solid var(--line); border-radius:12px; padding:14px; overflow-x:auto; font-size:.88rem; line-height:1.5; }
+  code { font-family:ui-monospace,Consolas,monospace; }
+  .note { background:var(--panel2); border-left:4px solid var(--amber); padding:12px 16px; border-radius:8px; color:var(--text); }
+  footer { padding:28px 0 48px; color:var(--muted); font-size:.9rem; text-align:center; border-top:1px solid var(--line); }
+  figure { margin:0 0 14px; } figure img { max-width:100%; border:1px solid var(--line); border-radius:12px; }
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="logo" href="#home">Ki<span>oo</span></a>
+  <nav aria-label="Main">
+    <a href="#features">Features</a><a href="#how">How it works</a><a href="#privacy">Privacy</a>
+    <a href="#install">Installation</a><a href="#demo">Demo</a><a href="#github">GitHub</a>
+  </nav>
+</div></header>
+
+<main>
+<div class="hero" id="home"><div class="wrap">
+  <h1>When the internet disappears, <br>knowledge stays.</h1>
+  <p class="lead">Kioo is an AI assistant that answers from the documents on your own computer, shows exactly which passage each answer came from, and keeps working with the internet turned off.</p>
+  <a class="btn" href="#install">Install Kioo</a><a class="btn ghost" href="#demo">See the demo</a>
+  <p class="note" style="max-width:640px;margin:26px auto 0;text-align:left"><strong>Important:</strong> this website only describes Kioo. The AI does <em>not</em> run here. Kioo runs on your own computer, so your documents never come to this site.</p>
+</div></div>
+
+<section id="features"><div class="wrap">
+  <h2>Features</h2>
+  <div class="grid">
+    <div class="card"><h3>Local open-weight AI</h3><p>Runs a model such as Qwen2.5 1.5B through Ollama on your computer. No remote AI service in the core workflow.</p></div>
+    <div class="card"><h3>Your documents</h3><p>Import text, Markdown or PDF files into a local library. Remove them any time.</p></div>
+    <div class="card"><h3>Answers with sources</h3><p>Every answer lists the passages it used, with the document and page. Sources come from the index, not from the model.</p></div>
+    <div class="card"><h3>Honest when it does not know</h3><p>If your documents do not contain the answer, Kioo says so instead of guessing.</p></div>
+    <div class="card"><h3>English and French</h3><p>Ask in English or French. The interface is available in both.</p></div>
+    <div class="card"><h3>Open source</h3><p>MIT licensed. Change the model, the prompt or the code.</p></div>
+  </div>
+</div></section>
+
+<section id="how"><div class="wrap">
+  <h2>How it works</h2>
+  <ol class="steps">
+    <li><strong>Import.</strong> Kioo reads your file, cuts it into short passages and saves them on your computer.</li>
+    <li><strong>Search.</strong> Your question is matched to the most relevant passages with a local keyword search (BM25). If nothing is relevant, Kioo stops and tells you.</li>
+    <li><strong>Answer.</strong> The local model is asked to answer using only those passages, and to say "not found" otherwise.</li>
+    <li><strong>Check.</strong> The answer is shown next to the real passages, so you can verify it.</li>
+  </ol>
+  <p class="note">A small model can still make mistakes. That is why Kioo always shows its sources and never presents an answer as verified fact.</p>
+</div></section>
+
+<section id="privacy"><div class="wrap">
+  <h2>Privacy</h2>
+  <p>Kioo's local mode processes imported documents and questions on your device. The core question-answering workflow does not require uploading your documents to a remote AI provider. Internet access is required initially to obtain the application dependencies and model unless these have already been installed.</p>
+  <p>There are no accounts, no analytics and no API keys. The server listens only on your own computer by default.</p>
+</div></section>
+
+<section id="install"><div class="wrap">
+  <h2>Installation (Windows, PowerShell)</h2>
+  <p>You need Node.js (LTS), Git and <a href="https://ollama.com/download/windows">Ollama</a>.</p>
+<pre><code>git clone https://github.com/YOUR-GITHUB-NAME/kioo.git
+cd kioo
+ollama pull qwen2.5:1.5b
+npm run install:all
+npm run build
+npm start</code></pre>
+  <p>Then open <code>http://127.0.0.1:8787</code>. The status line shows whether the server and the model are really ready.</p>
+</div></section>
+
+<section id="demo"><div class="wrap">
+  <h2>Demo</h2>
+  <p>The demonstration: import a document with the internet on, ask a question and see the sources, switch the internet off, and ask again. The local model still answers.</p>
+  <p><a class="btn" href="VIDEO-LINK">Watch the demo video</a> <a class="btn ghost" href="ARTICLE-LINK">Read the challenge article</a></p>
+  <figure><img src="assets/screenshot-1.png" alt="Kioo answering a question with source passages" onerror="this.closest('figure').hidden=true"></figure>
+  <figure><img src="assets/screenshot-2.png" alt="Kioo refusing to answer a question the documents do not cover" onerror="this.closest('figure').hidden=true"></figure>
+</div></section>
+
+<section id="github"><div class="wrap">
+  <h2>GitHub</h2>
+  <p>Source code, documentation and the evaluation: <a href="https://github.com/YOUR-GITHUB-NAME/kioo">github.com/YOUR-GITHUB-NAME/kioo</a></p>
+</div></section>
+</main>
+
+<footer><div class="wrap">Kioo is open source (MIT). Built for the Hacktoberfest Open-Source AI Challenge, Week 4: Ghost in the Machine.</div></footer>
+</body>
+</html>

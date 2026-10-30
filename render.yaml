@@ -1,0 +1,6 @@
+# Static website only. The AI app itself runs on the user's own computer, never on Render.
+services:
+  - type: web
+    name: kioo
+    runtime: static
+    staticPublishPath: website
